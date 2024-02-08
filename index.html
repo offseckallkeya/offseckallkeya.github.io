@@ -26,7 +26,8 @@
             gap: 20px;
         }
         h1 {
-            text-align: center;
+			font-size:xx-large; 
+		    text-align: center;
             color: #333;
         }
         h4 {
@@ -54,6 +55,17 @@
             color: #333;
 			text-align: center;
         }
+		h5{
+			font-size: x-large;
+			text-align: center;
+			margin-top: 60px;
+		}
+		.section-link{
+			margin-top: 20px;
+			text-align: center;
+			font-size: larger;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
     </style>
 </head>
 <body>
@@ -61,19 +73,17 @@
         <h1>Free Movies 🍿</h1>
         <h4>By <a href="https://app.hackthebox.com/profile/880607" target="_blank">offseckalki</a></h4>
 		<h2><a href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=ro">ADS? Get uBlock Origin</a>  </h2>
-        <div class="video-grid">
+		<div class="section-link">
+            <a href="#south-indian">South Indian</a>
+            <a href="#hollywood">Hollywood</a>
+        </div>
+		<h5>South Indian</h5>
+        <div class="video-grid" id="south-indian">
             <div class="video-container">
-                <iframe src="https://short.ink/wcLu_r6Uz" frameborder="0" scrolling="0" allowfullscreen></iframe>
+                <iframe src="https://short.ink/wcLu_r6Uz" allowfullscreen></iframe>
                 <div class="video-details">
                     <h2>Acharya 2022</h2>
                     <h3>When Dharmasthali, a village, is ruled by some of the most powerful but corrupt leaders, a mysterious stranger shows up to end illegal practices and fulfil his comrade's wish.</h3>
-                </div>
-            </div>
-            <div class="video-container">
-                <iframe src="https://short.ink/HLHzIGzLk" allowfullscreen></iframe>
-                <div class="video-details">
-                    <h2>The Martian (2015)</h2>
-                    <h3>Mark Watney, an astronaut, strives to survive in Mars when a space mission goes wrong. While he undergoes different challenges, his colleagues in NASA exhaust all options to bring him home.</h3>
                 </div>
             </div>
 			<div class="video-container">
@@ -84,19 +94,37 @@
                 </div>
             </div>
 			<div class="video-container">
+                <iframe src="https://short.ink/sbvrzUKgY" allowfullscreen></iframe>
+                <div class="video-details">
+                    <h2>Dasara(2023)</h2>
+                    <h3>In a town that is dependant on coal mining, The lives of three childhood friends turn chaotic when they get into a fight with the son of the village headman.</h3>
+                </div>
+            </div><div class="video-container">
+                <iframe src="https://short.ink/nU-G-6-vn" allowfullscreen></iframe>
+                <div class="video-details">
+                    <h2>Vaathi (2023)</h2>
+                    <h3>In a town that is dependant on coal mining, The lives of three childhood friends turn chaotic when they get into a fight with the son of the village headman.</h3>
+                </div>
+            </div>
+		</div>
+			<h5>HollyWood</h5>
+			<div  id="hollywood" class="video-grid">
+            <div class="video-container">
+                <iframe src="https://short.ink/HLHzIGzLk" allowfullscreen></iframe>
+                <div class="video-details">
+                    <h2>The Martian (2015)</h2>
+                    <h3>Mark Watney, an astronaut, strives to survive in Mars when a space mission goes wrong. While he undergoes different challenges, his colleagues in NASA exhaust all options to bring him home.</h3>
+                </div>
+            </div>
+			
+			<div class="video-container">
                 <iframe src="https://short.ink/HcpQsWayM" allowfullscreen></iframe>
                 <div class="video-details">
                     <h2>Unknown Cosmic Time Machine (2023)</h2>
                     <h3>With unique access behind-the-scenes to NASA's ambitious mission to launch the James Webb Space Telescope, we follow a team of engineers and scientists as they take the next giant leap in our quest to understand the universe.</h3>
                 </div>
             </div>
-			<div class="video-container">
-                <iframe src="https://short.ink/sbvrzUKgY" allowfullscreen></iframe>
-                <div class="video-details">
-                    <h2>Dasara(2023)</h2>
-                    <h3>In a town that is dependant on coal mining, The lives of three childhood friends turn chaotic when they get into a fight with the son of the village headman.</h3>
-                </div>
-            </div>
+			
 			<div class="video-container">
                 <iframe src="https://short.ink/hJwO44oUr" allowfullscreen></iframe>
                 <div class="video-details">
@@ -105,7 +133,7 @@
                 </div>
             </div>
             <!-- Add more div elements for additional videos -->
-        </div>
+		</div>
     </div>
 </body>
 </html>
