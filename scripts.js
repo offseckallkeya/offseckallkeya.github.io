@@ -94,6 +94,11 @@ var commands = [
         command: "social",
         description: "Show social media profiles",
         action: cmdSocial
+    },
+    {
+        command: "exit",
+        description: "Close the web tab",
+        action: cmdExit
     }
 ];
 
@@ -179,6 +184,12 @@ function cmdAbout(args) {
 
 function cmdSocial(args) {
     createTable(socialMediaLinks, ['site', 'url'], 'url');
+}
+function cmdExit(args) {
+    addPreformattedText("Closing tab...", infoColor);
+    setTimeout(() => {
+        window.close();
+    }, 1000);
 }
 
 // utility methods
