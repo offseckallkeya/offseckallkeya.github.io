@@ -186,11 +186,24 @@ function cmdSocial(args) {
     createTable(socialMediaLinks, ['site', 'url'], 'url');
 }
 function cmdExit(args) {
-    addPreformattedText("Closing tab...", infoColor);
-    setTimeout(() => {
-        window.close();
-    }, 1000);
+    addPreformattedText("Type 'exit' again to confirm closing this tab.", infoColor);
+    // Temporarily change the command to the confirmation command
+    commands.push({
+        command: "exit",
+        description: "Confirm closing the tab",
+        action: function() {
+            addPreformattedText("Closing tab...", infoColor);
+            setTimeout(() => {
+                window.close();
+                // If window.close() doesn't work, notify the user to close the tab manually
+                if (!window.closed) {
+                    addPreformattedText("Please close this tab manually.", errorColor);
+                }
+            }, 1000);
+        }
+    });
 }
+
 
 // utility methods
 function showLoading() {
